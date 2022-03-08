@@ -5,8 +5,8 @@
 }
 
 body {
-    color: #fff;
-    background-color:gray;
+    color           : #fff;
+    background-color: gray;
 }
 
 .background-image {
@@ -14,8 +14,8 @@ body {
 
     background-image        : url("../../img/mumuila.jpg");
     background-size         : cover;
-    /* background-position-x: -10; */
-    background-repeat       : no-repeat
+
+    background-repeat       : no-repeat;
 }
 
 
@@ -23,109 +23,121 @@ h1 {
     font-size: 64px;
     margin   : 0 0 0;
 
-    color: #FD8A02
+    color: #FD8A02;
 }
 
 h1 span {
     font-size  : 96px;
     font-weight: 900;
 }
-h4{
+
+h4 {
+    color         : #FD8A02;
+    text-transform: capitalize;
+}
+
+h6 {
+    text-transform: capitalize;
+}
+
+span {
     color: #FD8A02;
-    text-transform: capitalize;
 }
-h6{
-    text-transform: capitalize;
-}
-span{
-color: #FD8A02;
-}
+
 .wrapper {
-    margin: 0 0 0;
+    margin   : 0 0 0;
     /* height: auto; */
 }
+
 .left-side {
-    height:55.2rem;
-    width:50vw;
-    
-}
-.right-side{
-    height:auto;
+    height: 55.2rem;
+    width : 50vw;
+
 }
 
-   
-.header{
-    text-align:justify;
+.right-side {
+    height: auto;
+}
+
+
+.header {
+    text-align  : justify;
     padding-left: 90px;
 }
 
-.nav-item{
+.nav-item {
     text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-    
-}
-.search-wrapper{
-    padding-left: 90px;
-    width: 800px;
-    
-}
-.activated{
-    color:#fff!important;
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+
 }
 
-.searchword{
-    background-color: rgb(0, 0, 0,0.6);
-    opacity: 10;
-    color:#FD8A02;
-    border-radius: 10px;
-    
-    
+.search-wrapper {
+    padding-left: 90px;
+    width       : 800px;
+
 }
-.input-group > .form-control:not(:last-child) {
-    border-top-right-radius: 10px;
+
+.activated {
+    color: #fff !important;
+}
+
+.searchword {
+    background-color: rgb(0, 0, 0, 0.6);
+    opacity         : 10;
+    color           : #FD8A02;
+    border-radius   : 10px;
+
+
+}
+
+.input-group>.form-control:not(:last-child) {
+    border-top-right-radius   : 10px;
     border-bottom-right-radius: 10px;
 }
 
-.searchword:focus{
-    background-color: rgb(0, 0, 0,0.6);
-    opacity: 10;
-    outline:none;
-    color:white
+.searchword:focus {
+    background-color: rgb(0, 0, 0, 0.6);
+    opacity         : 10;
+    outline         : none;
+    color           : white
 }
-.search-icon{
-    color: #FD8A02
-}
-.result{
-    padding:20px;
-    margin-left: 280px;
-    background-color: rgb(0, 0, 0,0.6);
-    width: 300px;
-    height: 150px;
-    border-radius:10px;
-    border-width: 5px;
-    border-color: #000;
-    box-shadow: 1px 1px 10px black;
-    font-size:12px
 
+.search-icon {
+    color: #FD8A02;
 }
-.result span{
+
+.result {
+    padding         : 20px;
+    margin-left     : 280px;
+    background-color: rgb(0, 0, 0, 0.6);
+    width           : 300px;
+    height          : 150px;
+    border-radius   : 10px;
+    border-width    : 5px;
+    border-color    : #000;
+    box-shadow      : 1px 1px 10px black;
+    font-size       : 12px;
+}
+
+.result span {
     font-weight: bold;
 }
 
-.learn{
-    color:#FD8A02
+.learn {
+    color: #FD8A02;
 }
-.learn-text{
-    color:white
+
+.learn-text {
+    color: white;
 }
 
 
 
 
 footer {
-    
+
     position   : absolute;
     bottom     : 0;
     left       : 0;
@@ -143,29 +155,31 @@ footer {
     flex-direction : column;
     text-align     : center;
 }
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
+
+.socials {
+    list-style     : none;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    margin: 1rem 0 1rem 0;
+    margin         : 1rem 0 1rem 0;
 }
 
-.socials li{
+.socials li {
     margin: 0 10px;
 }
 
 
 
-.socials a i{
+.socials a i {
     font-size: 1.1rem;
-    width: 20px;
-    color:#FD8A02
+    width    : 20px;
+    color    : #FD8A02
 }
 
-.socials a:hover i{
+.socials a:hover i {
     color: aqua;
 }
+
 /* 
 ======================================================
                     MEDIA QUERIES
@@ -174,14 +188,8 @@ footer {
 
 /* ========== Tablet ================= */
 @media screen and (max-width: 800px) {
-    .background-image {
-        /* background-position-x: left; */
-
-    }
-
+    
     .ts {
-       
-
         position   : relative;
         margin-left: -140px;
     }
@@ -189,74 +197,86 @@ footer {
     .left-side {
         display: none;
     }
+
     .right-side {
-        margin-left:165px;
-        width: 100vw;
-        height: 100vh;
+        margin-left : 165px;
+        width       : 100vw;
+        height      : 100vh;
         padding-left: 100px;
     }
-    .search-wrapper{
+
+    .search-wrapper {
         padding-left: 60px;
-        width: auto;
+        width       : auto;
     }
+
     .searchword {
-        width:300px
+        width: 300px;
     }
-    .result{
+
+    .result {
         margin-left: 120px;
     }
-    .wrapper{
-        height:1000px
+
+    .wrapper {
+        height: 1000px;
     }
-    
+
 }
 
 /* ========== Mobile ================= */
 @media screen and (max-width: 414px) {
     .background-image {
         /* background-position-x: left; */
-        height:900px;
+        height: 900px;
     }
-    .header{
+
+    .header {
         margin-left: -200px;
     }
-    .search-wrapper{
+
+    .search-wrapper {
         margin-left: -170px;
-        
+
     }
-    .search-box{
-        padding:0 0 0;
+
+    .search-box {
+        padding: 0 0 0;
     }
+
     .searchword {
-        width:250px
+        width: 250px;
     }
-    .result{
+
+    .result {
         margin-left: -97px;
     }
 
     .ts {
 
-        position   : relative;
-        
+        position: relative;
+
     }
 
     .left-side {
         display: none;
     }
+
     .right-side {
-        margin-left:165px;
-        width: 100vw;
-        height: auto;
+        margin-left: 165px;
+        width      : 100vw;
+        height     : auto;
     }
-    
-    .wrapper{
-        height:900px
+
+    .wrapper {
+        height: 900px;
     }
-    footer{
-        
+
+    footer {
+
         margin-left: -20px;
-        
-         
-        
+
+
+
     }
 }
