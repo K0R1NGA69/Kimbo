@@ -84,7 +84,7 @@ color: #FD8A02;
 }
 .search-wrapper{
     padding-left: 90px;
-    
+    width: 800px;
     
 }
 .searchword:focus{
