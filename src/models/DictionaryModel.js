@@ -34,7 +34,7 @@ class DictBd {
         }else if (mode === "ub"){
             this.validate()
             if (this.errors.length>0) return
-            const result = await DictionaryModel.find({ "words.umbundu":[this.searchInput]})
+            const result = await DictionaryModel.find({ "words.umbundu":this.searchInput})
             console.log(result)
             if(result.length<1){
                 this.errors.push("Palavra não encontrada Por favor verifique se a palavra foi inserida correctamente")
