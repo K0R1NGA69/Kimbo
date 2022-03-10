@@ -96,7 +96,10 @@
                                     <h6>
                                         <%if(word.umbundu.length> 1){%>
                                             <%word.umbundu.forEach((ub)=>{%>
-                                                <%=ub+", "%>
+                                                <%if(word.umbundu[word.umbundulength -1] !==ub){%>
+                                                    <%=ub+", "%>
+                                                <%}%>
+                                                <%=ub%>
                                             
                                         <%})%> 
                                         <%}else{%>

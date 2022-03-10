@@ -1,7 +1,5 @@
 const DictBd = require("../models/DictionaryModel")
 const MiniSearch = require("minisearch")
-const fs = require("fs")
-
 
 
 let mode = "pt" 
@@ -10,7 +8,7 @@ exports.search = async(req, res) => {
         const s_mode =req.params.mode
         const word = req.body.searchword.toLowerCase()
         const dictionary = new DictBd(word)
-        // console.log(word)
+        
         async function searchPtUb(word_list,word){
                 let miniSearch = new MiniSearch({
                         idField: 'portuguese',
