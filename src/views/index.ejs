@@ -17,8 +17,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
-    <!-- Fontawsome -->
-    <!-- <script defer src="/frontend/assets/fontawesome/all.js" crossorigin="anonymous"></script> -->
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5276085925731585"
+        crossorigin="anonymous"></script>
 
     <title>Kimbo</title>
 </head>
@@ -28,7 +29,7 @@
     <div class="ts">
 
         <div class="background-image">
-           
+
 
             <div class="row wrapper">
                 <div class="col-lg-6 left-side">
@@ -38,7 +39,7 @@
                     <div class="header mt-5">
                         <h1><span>K</span>imbo</h1>
                         Dicionário Português - Umbundu
-    
+
                     </div>
                     <div class="search-wrapper mt-5 ">
                         <nav class="navbar navbar-expand-lg  pl-0  navbar-dark ">
@@ -50,54 +51,54 @@
                                     <li class="nav-item">
                                         <a class="nav-link  ub" aria-current="page" href="">Umbundu</a>
                                     </li>
-    
+
                                 </ul>
-    
+
                             </div>
                         </nav>
                         <div class="feedback ">
-    
+
                         </div>
                         <form action="/search/pt" method="POST" class="input-group  search-box " novalidate>
-    
+
                             <input type="text" placeholder="Pesquise uma palavra" name=searchword
                                 class="  searchword form-control">
-    
-    
+
+
                             <button class="btn ml-3 btn-outline-secondary " type="submit">
                                 <i class="fa fa-search search-icon"></i>
                             </button>
-    
-    
+
+
                         </form>
                     </div>
                     <div class="result mt-5">
                         <%if(errors.length>0){%>
-    
-    
-                                <%errors.forEach((error)=>{%>
-                                    <h6>
-                                        <%=error%>
-                                    </h6>
-                                    <%})%>
-    
-                           
-    
-                        <%}else{%>
-                            <% if(result["0"]){ %>
-                                <%const word=result["0"]%>
-                                <%if(word.language==="pt" ){%>
-                                    Tradução de <span>
-                                        <%=word.portuguese%>
-                                    </span> Português - Umbundu
-                                    <h4>
-                                        <%=word.portuguese%>
-                                    </h4>
-                                    <h6>
-                                        <%if(word.umbundu.length> 1){%>
-                                            <%word.umbundu.forEach((ub)=>{%>
-                                                <%if(word.umbundu[word.umbundulength -1] !==ub){%>
-                                                    <%=ub+", "%>
+
+
+                            <%errors.forEach((error)=>{%>
+                                <h6>
+                                    <%=error%>
+                                </h6>
+                                <%})%>
+
+
+
+                                    <%}else{%>
+                                        <% if(result["0"]){ %>
+                                            <%const word=result["0"]%>
+                                                <%if(word.language==="pt" ){%>
+                                                    Tradução de <span>
+                                                        <%=word.portuguese%>
+                                                    </span> Português - Umbundu
+                                                    <h4>
+                                                        <%=word.portuguese%>
+                                                    </h4>
+                                                    <h6>
+                                                        <%if(word.umbundu.length> 1){%>
+                                                            <%word.umbundu.forEach((ub)=>{%>
+                                                                <%if(word.umbundu[word.umbundulength -1] !==ub){%>
+                                                                    <%=ub+", "%>
                                                 <%}%>
                                                 <%=ub%>
                                             
@@ -107,66 +108,80 @@
                                         <%}%> 
                                     </h6>
                                 <%}%>
-                                <%if(word.language==="ub"){%>
-                                    Tradução de <span>
-                                        <%=word.terms%>
-                                    </span> Umbundu - Português
-                                    <h4>
-                                        <%=word.terms%>
-                                    </h4>
-                                    <h6>
-                                        <%=word.portuguese%>
-                                    </h6>
-                                                                           
-                                <%}%>
-                                <%mode=0%>
-                            <%}%>
-                            <%if (mode!==0 ){%>
-                                Tradução de <span>aprender</span>  Português - Umbundu
-                                <h4>Aprender</h4>
-                                <h6>Oku lilongisa</h6>
-                            <%}%>
-    
-                        <%}%>   
-                        
-    
-                            
-                        
-                        <div class="learn-with mt-4">
-                            <a href="https://lalipo2022.wixsite.com/my-site-8?fbclid=IwAR24cyRIGgbe2rzB99_1tJTovXsgsTajnHC_xCn7gNlWymhEf-KJKKx7XJE">
-                                <i class="fa fa-book fa-2x book learn "></i>
-                                <span class=" learn-text book">Clique aqui! aprenda Umbundu conosco!</span>
-                               
-                            </a>
-                            
-                        </div>
+                                <%if(word.language===" ub"){%>
+                                                                        Tradução de <span>
+                                                                            <%=word.terms%>
+                                                                        </span> Umbundu - Português
+                                                                        <h4>
+                                                                            <%=word.terms%>
+                                                                        </h4>
+                                                                        <h6>
+                                                                            <%=word.portuguese%>
+                                                                        </h6>
+
+                                                                        <%}%>
+                                                                            <%mode=0%>
+                                                                                <%}%>
+                                                                                    <%if (mode!==0 ){%>
+                                                                                        Tradução de
+                                                                                        <span>aprender</span> Português
+                                                                                        - Umbundu
+                                                                                        <h4>Aprender</h4>
+                                                                                        <h6>Oku lilongisa</h6>
+                                                                                        <%}%>
+
+                                                                                            <%}%>
+
+
+
+
+                                                                                                <div
+                                                                                                    class="learn-with mt-4">
+                                                                                                    <a
+                                                                                                        href="https://lalipo2022.wixsite.com/my-site-8?fbclid=IwAR24cyRIGgbe2rzB99_1tJTovXsgsTajnHC_xCn7gNlWymhEf-KJKKx7XJE">
+                                                                                                        <i
+                                                                                                            class="fa fa-book fa-2x book learn "></i>
+                                                                                                        <span
+                                                                                                            class=" learn-text book">Clique
+                                                                                                            aqui!
+                                                                                                            aprenda
+                                                                                                            Umbundu
+                                                                                                            conosco!</span>
+
+                                                                                                    </a>
+
+                                                                                                </div>
                     </div>
                     <footer id="footer">
-    
+
                         <div class="footer-content">
-                    
+
                             <ul class="socials">
-                                <li><a href="https://www.facebook.com/Silvestreily"><i class="fab social-icon learn fa-facebook fa-2x"></i></a></li>
-                                <li><a href="https://www.facebook.com/Silvestreily"><i class="fa-brands fa-github learn fa-2x"></i></a></li>
-                                <li><a href="https://www.youtube.com/watch?v=CS4d3E3LmmM"><i class="fab social-icon learn fa-youtube fa-2x"></i></a></li>
-                                
+                                <li><a href="https://www.facebook.com/Silvestreily"><i
+                                            class="fab social-icon learn fa-facebook fa-2x"></i></a></li>
+                                <li><a href="https://www.facebook.com/Silvestreily"><i
+                                            class="fa-brands fa-github learn fa-2x"></i></a></li>
+                                <li><a href="https://www.youtube.com/watch?v=CS4d3E3LmmM"><i
+                                            class="fab social-icon learn fa-youtube fa-2x"></i></a></li>
+
                             </ul>
-                            <p>©Kimbo Dictionary 2022 - Crafted by <span>K0R1NGA69</span><br>Script a smile in your face </p>
+                            <p>©Kimbo Dictionary 2022 - Crafted by <span>K0R1NGA69</span><br>Script a smile in your face
+                            </p>
                         </div>
-                    
-                    
-                    
+
+
+
                     </footer>
                 </div>
             </div>
-                </div>
-                
+        </div>
+
     </div>
 
 
 
 
-    
+
     <script src="./assets/js/bundle.js"></script>
 </body>
 
