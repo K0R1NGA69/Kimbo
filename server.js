@@ -7,7 +7,7 @@ const routes = require("./routes")
 const path = require("path")
 const helmet = require("helmet")
 const flash = require("connect-flash")
-const { middleWare} = require("./src/middlewares/middleware")
+const { middleWare } = require("./src/middlewares/middleware")
 mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Connected")
@@ -15,8 +15,11 @@ mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifi
     })
     .catch((err) => { console.error(err) })
 
-app.use(helmet())
-
+app.use(
+    helmet({
+        contentSecurityPolicy: false,
+    })
+)
 const sessionOptions = session({
     secret: "oppaidaisuki",
     resave: false,

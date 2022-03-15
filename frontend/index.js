@@ -2,19 +2,21 @@ import "core-js/stable"
 import "regenerator-runtime/runtime"
 import "./assets/css/styles.css"
 import validator from "./modules/frontValidator"
+import loading from "./modules/loader"
 import {changeSearchMode} from "./modules/searchMode"
 import { library, icon } from "../node_modules/@fortawesome/fontawesome-svg-core"
 import { faBook } from '../node_modules/@fortawesome/fontawesome-free/js/all'
 import { faGithub } from '../node_modules/@fortawesome/fontawesome-free/js/all'
 import { faYoutube} from '../node_modules/@fortawesome/fontawesome-free/js/all'
 import { faFacebook} from '../node_modules/@fortawesome/fontawesome-free/js/all'
-// ,".searchword",".feedback"
+
 
 //Modules
+loading("preloader")
 validator(".search-box")
 changeSearchMode()
 
-// Icons
+//============= Font awesome Icons==================
 library.add(faBook)
 library.add(faGithub)
 library.add(faYoutube)

@@ -124,6 +124,9 @@ span {
 .result span {
     font-weight: bold;
 }
+.feedback{
+    color:red;
+}
 
 .learn {
     color: #FD8A02;
@@ -276,7 +279,13 @@ footer {
 
         margin-left: -20px;
 
-
-
     }
+}
+#preloader{
+    background:#fff url("../../img/loader.gif") no-repeat center center;
+    background-size: 30%;
+    height:100vh;
+    width:100%;
+    position: fixed;
+    z-index: 100;
 }
