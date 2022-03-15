@@ -12,7 +12,7 @@ import { faFacebook} from '../node_modules/@fortawesome/fontawesome-free/js/all'
 
 
 //Modules
-loading("preloader")
+//loading("preloader")
 validator(".search-box")
 changeSearchMode()
 

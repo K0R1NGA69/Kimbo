@@ -28029,8 +28029,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
  //Modules
+//loading("preloader")
 
-(0,_modules_loader__WEBPACK_IMPORTED_MODULE_4__["default"])("preloader");
 (0,_modules_frontValidator__WEBPACK_IMPORTED_MODULE_3__["default"])(".search-box");
 (0,_modules_searchMode__WEBPACK_IMPORTED_MODULE_5__.changeSearchMode)(); //============= Font awesome Icons==================
 
