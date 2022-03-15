@@ -283,7 +283,7 @@ footer {
 }
 #preloader{
     background:#fff url("../../img/loader.gif") no-repeat center center;
-    background-size: 30%;
+    background-size: 80%;
     height:100vh;
     width:100%;
     position: fixed;
