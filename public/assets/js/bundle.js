@@ -8420,9 +8420,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function loading(div) {
   var loader = document.getElementById(div);
-  console.log("ok");
   window.addEventListener("load", function () {
-    console.log("ok");
     loader.style.display = "none";
   });
 }
