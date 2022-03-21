@@ -7,17 +7,13 @@ export default function validator(formClass) {
     const searchbox = document.querySelector(".searchword")
     console.log(searchbox)
     const messages = []
-    
 
-
-
-
-    
     function checkValid() {
         console.log()
         if (searchbox.value.length < 2 || searchbox.value.length > 20) {
             messages.push("Por favor insira uma palvra válida")
             searchbox.style.borderColor = "red"
+            feedback.style.color="red"
             return false
         }else{
             return true
@@ -25,10 +21,6 @@ export default function validator(formClass) {
     }
 
 
-
-   
-    
-    
     form.addEventListener('submit', function(event) {
         
         if (!checkValid()) {
