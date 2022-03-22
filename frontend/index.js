@@ -12,12 +12,6 @@ import {changeSearchLangue} from "./modules/searchLangue"
 validator(".search-form")
 changeSearchLangue()
 
-//============= Font awesome Icons==================
-library.add(faBook)
-library.add(faGithub)
-library.add(faYoutube)
-library.add(faFacebook)
-
 
 
 

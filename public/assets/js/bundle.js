@@ -19575,12 +19575,7 @@ __webpack_require__.r(__webpack_exports__);
 // loading("preloader")
 
 (0,_modules_frontValidator__WEBPACK_IMPORTED_MODULE_3__["default"])(".search-form");
-(0,_modules_searchLangue__WEBPACK_IMPORTED_MODULE_5__.changeSearchLangue)(); //============= Font awesome Icons==================
-
-library.add(faBook);
-library.add(faGithub);
-library.add(faYoutube);
-library.add(faFacebook);
+(0,_modules_searchLangue__WEBPACK_IMPORTED_MODULE_5__.changeSearchLangue)();
 })();
 
 /******/ })()
